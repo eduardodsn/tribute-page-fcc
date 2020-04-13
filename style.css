@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1C2833;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+  
+  #title {
+    font-weight: 800;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  
+  #main > p {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.1em;
+    color: black;
+  }
+  
+  #img-div {
+    display: block;
+  }
+  
+  #image {
+    max-width: 100%;
+    display: inherit;
+    margin: 0 auto;
+    border-radius: 30px;
+  }
+  
+  #img-caption {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 0 20px;
+  }
+  
+  #tribute-info {
+    margin-top: 60px;
+    border-radius: 20px;
+  }
+  
+  #container1 {
+    width: 100%;
+    background-color: #E5E7E9;
+    padding-top: 8px;
+    border-radius: 10px;
+  }
+  
+  #container2 {
+    width: 100%;
+    background-color: #E5E7E9;
+    margin-top: 0;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .headline {
+    color: #323D3E;
+    text-align: center;
+  }
+  
+  #container1 > ul > li {
+    margin: 0 25px;
+    padding-bottom: 20px;
+  }
+  
+  #container2 > ul > li {
+    margin: 0 25px;
+    padding-bottom: 20px;
+  }
+  
+  #quote {
+    background-color: #E5E7E9;
+    border-radius: 10px;
+  }
+  
+  #quote p {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  footer h3 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #tribute-link  {
+    color: #909497;
+  }
+  
+  #tribute-link:visited {
+    color: #BFC9CA;
+  }
+  
+  #tribute-link:hover {
+    color: white;;
+  }
+  
