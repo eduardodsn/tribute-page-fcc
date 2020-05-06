@@ -13,7 +13,6 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: var(--jet-color);
 }
 
 /* Home */
@@ -23,6 +22,7 @@ body {
   height: 100%;
   align-items: center;
   overflow: hidden;
+  background-color: var(--jet-color);
 }
 
 #text-container, #img-container {
@@ -88,7 +88,7 @@ body {
   overflow: hidden;
 }
 
-#title-container {
+.title-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +96,7 @@ body {
   height: 200px;
 }
 
-#title-container h2 {
+.title-container h2 {
   font-family: 'Muli', sans-serif;
   font-size: 3em;
   color: var(--ruby-color);
@@ -110,8 +110,7 @@ body {
 
 #timeline {
   position: relative;
-  margin: 50px auto;
-  padding: 40px 0;
+  margin: 0 auto;
   width: 70%;
 }
 
@@ -199,6 +198,87 @@ body {
 #timeline ul li:nth-child(even) .time {
   left: -95px;
 }
+
+/* PREMIOS */
+
+#premios-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+  background-color: var(--jet-color);
+}
+
+#cards-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 70px 0;
+}
+
+.card-container {
+  position: relative;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+  height: 350px;
+  border-radius: 4px;
+  background-color: #FFF;
+  transition: all 0.5s ease-out;
+}
+
+.card-container:hover .card {
+  opacity: 0;
+}
+
+.card-container:hover .desc{
+  opacity: 1;
+}
+
+.card h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7em;
+  font-weight: 600;
+  float: left;
+  margin: 10px auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo img {
+  width: 45%;
+}
+
+.desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+  height: 350px;
+  border-radius: 4px;
+  background-color: #FFF;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+
+
 
 
 
