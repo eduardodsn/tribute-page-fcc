@@ -15,7 +15,7 @@ body {
   height: 100%;
 }
 
-/* Home */
+/* HOME */
 #home-container {
   display: flex;
   width: 100%;
@@ -80,7 +80,66 @@ body {
   animation: bounce 2s ease-out infinite;
 }
 
-/* History */
+/* MENU */
+.fixed-menu {
+  position: fixed;
+  top: auto;
+  right: -100px;
+  width: 100px;
+  height: 200px;
+  background: #FFF;
+  z-index: 1;
+}
+
+.fixed-menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-menu ul li {
+  display: flex;
+  position: relative;
+  top: auto;
+  right: 50px;
+  list-style: none;
+  width: 120px;
+  height: 50px;
+  background-color: #D62828;
+  transition: right 0.3s ease-out;
+}
+
+.fixed-menu ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: 'Muli', sans-serif;
+  font-size: 0;
+  font-weight: 800;
+  color: #FFF;
+}
+
+.fixed-menu ul li i {
+  position: absolute;
+  margin: 17px;
+  color: #FFF;
+}
+
+.fixed-menu ul li:hover {
+  right: 120px;
+}
+
+.fixed-menu ul li:hover i {
+  display: none;
+}
+
+.fixed-menu ul li:hover a {
+  font-size: 18px;
+}
+
+/* HISTORY */
 #history-container {
   width: 100%;
   height: 100%;
@@ -200,7 +259,6 @@ body {
 }
 
 /* PREMIOS */
-
 #premios-container {
   display: flex;
   flex-direction: column;
@@ -209,10 +267,15 @@ body {
   margin-top: 50px;
   overflow: hidden;
   background-color: var(--jet-color);
+  background-image: url(./assets/images/mj-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 #cards-container {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   justify-content: space-around;
@@ -222,6 +285,7 @@ body {
 
 .card-container {
   position: relative;
+  box-shadow: -2px 9px 30px 0px rgba(24,24,27,1);
 }
 
 .card {
@@ -232,8 +296,8 @@ body {
   width: 280px;
   height: 350px;
   border-radius: 4px;
-  background-color: #FFF;
-  transition: all 0.5s ease-out;
+  background-color: var(--jet-color);
+  transition: all 0.2s linear;
 }
 
 .card-container:hover .card {
@@ -250,43 +314,135 @@ body {
   font-weight: 600;
   float: left;
   margin: 10px auto;
+  color: #FFF;
 }
 
 .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 100%;
+  background-color: #FFF;
 }
 
 .logo img {
   width: 45%;
+  height: 68%;
 }
 
 .desc {
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 280px;
   height: 350px;
   border-radius: 4px;
-  background-color: #FFF;
+  background-color: var(--jet-color);
   opacity: 0;
-  transition: all 0.5s ease-out;
+  transition: all 0.2s linear;
 }
 
+.desc p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px;
+  color: #FFF;
+  text-align: center;
+}
 
+/* SAIBA MAIS */
+#saiba-mais-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: var(--jet-color);
+}
 
+#saiba-mais-container p {
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+  color: #FFF;
+}
 
+#saiba-mais-container p a {
+  text-decoration: none;
+  color: var(--ruby-color);
+}
 
+#saiba-mais-container p a:hover {
+  background-color: #FFF;
+  color: var(--jet-color);
+}
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 760px) {
+  .fixed-menu {
+    display: none;
+  }
+}
 
+@media screen and (max-width: 840px) {
+  #premios-container {
+    background-position-x: -500px;
+    background-position-y: -130px;
+    background-size: initial;
+  }
 
+  #cards-container {
+    margin: 30px 0;
+  }
+  .card-container {
+    margin-bottom: 30px;
+  }
+}
 
+@media screen and (max-width: 562px) {
+  #home-container {
+    height: 600px;
+  }
 
+  #text-container {
+    padding: 0 10px;
+  }
 
+  #img-container img {
+    width: 170px;
+    height: 450px;
+    margin-top: 150px;
+  }
+
+  #timeline {
+    width: 100%;
+  }
+
+  #timeline ul li {
+    padding: 20px 10px;
+  }
+
+  .card-container {
+    margin-bottom: 30px;
+  }
+
+  #cards-container {
+    margin: 0 0 30px;
+  }
+
+  #premios-container {
+    background-position-x: -1000px;
+    background-position-y: 0;
+    background-size: cover;
+  }
+
+  #saiba-mais-container {
+    text-align: center;
+  }
+}
+
+/* ANIMATIONS */
 @keyframes bounce {
   0%, 30%, 50%, 70%, 100% {
     transform: translateY(0px);

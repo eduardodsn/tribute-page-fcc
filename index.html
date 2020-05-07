@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Muli:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Tribute Page</title>
@@ -22,6 +21,26 @@
             </div>
             <div id="img-container">
                 <img src="./assets/images/mj.png" alt="Michael Jackson">
+            </div>
+            <div class="fixed-menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-chevron-left"></i>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-left"></i>
+                        <a href="#history">História</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-left"></i>
+                        <a href="#premios">Prêmios</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-left"></i>
+                        <a href="#saiba-mais">Saiba mais</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -54,7 +73,7 @@
                     <li>
                         <div class="content">
                             <h3>Primeiro contrato</h3>
-                            <p>A famosa gravadora de discos de Detroit, MoTown Records, assina um contrato com os novos fenômenos do momento, The Jacksons 5. </p>
+                            <p>A famosa gravadora de discos de Detroit, MoTown Records, assina um contrato com os novos fenômenos do momento, os Jackson 5. </p>
                         </div>
                         <div class="time">
                             <h4>1968</h4>
@@ -81,7 +100,7 @@
                     <li>
                         <div class="content">
                             <h3>Músicas e mais músicas</h3>
-                            <p>A Motown Records aproveita o último ano de contrato com o fenômeno Michael Jackson e lança o disco Forever, Michael.</p>
+                            <p>A MoTown Records aproveita o último ano de contrato com o fenômeno Michael Jackson e lança o disco Forever, Michael.</p>
                         </div>
                         <div class="time">
                             <h4>1975</h4>
@@ -258,7 +277,7 @@
     <section id="premios">
         <div id="premios-container">
             <div class="title-container">
-                <h2 style="border-bottom-color: #FFF;">Prêmios</h2>
+                <h2 style="border-bottom-color: #FFF; color: var(--jet-color);">Prêmios</h2>
             </div>
             <div id="cards-container">
                 <div class="card-container">
@@ -272,21 +291,35 @@
                         <p>Somente no ano de 1984, Jackson recebeu 8 prêmios Grammy, estabelecendo um recorde na história da premiação. Além dos prêmios ordinários, Jackson recebeu também o Legend Award e o Lifetime Achievement Award por suas contribuições ao cenário musical internacional.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <h2>9x</h2>
-                    <div class="logo">
-                        <img src="./assets/images/billboard.png" alt="Billboard Awards" style="width: 60%;">
+                <div class="card-container">
+                    <div class="card">
+                        <h2>9x</h2>
+                        <div class="logo">
+                            <img src="./assets/images/billboard.png" alt="Billboard Awards" style="width: 70%;">
+                        </div>
                     </div>
-                    <p>A premiação Billboard Music Awards, organizada pela revista Billboard, é uma das principais cerimônias de premiação dos Estados Unidos. Ao longo de sua carreira, Jackson recebeu 9 prêmios Billboard.</p>
+                    <div class="desc">
+                        <p>A premiação Billboard Music Awards, organizada pela revista Billboard, é uma das principais cerimônias de premiação dos Estados Unidos. Ao longo de sua carreira, Jackson recebeu 9 prêmios Billboard.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h2>26x</h2>
-                    <div class="logo">
-                        <img src="./assets/images/american-music-awards.png" alt="American Music Awards">
+                <div class="card-container">
+                    <div class="card">
+                        <h2>26x</h2>
+                        <div class="logo">
+                            <img src="./assets/images/american-music-awards.png" alt="American Music Awards">
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <p>Tendo recebido 3 prêmios em 1980, Jackson totalizou 26 prêmios American Music Awards, incluindo o de "Artista do Século".</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer id="saiba-mais">
+        <div id="saiba-mais-container">
+            <p>Esse é um resumo da incrível história de Michael Jackson. Para conhecer mais sobre esse gênio da música pop, veja mais <a href="https://pt.wikipedia.org/wiki/Michael_Jackson" target="_blank">aqui</a>!</p>
+        </div>
+    </footer>
 </body>
 </html>
